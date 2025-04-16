@@ -4,10 +4,6 @@
 
 A real-time multilingual voice translator web app designed for healthcare settings. This tool allows medical professionals and patients to break language barriers by speaking into the app, which then translates the input and speaks it back in the selected language.
 
-## 🌐 Live Preview
-
-_Coming Soon_ (You can add deployment link here when ready)
-
 ---
 
 ## 📋 Features
@@ -48,3 +44,11 @@ _Coming Soon_ (You can add deployment link here when ready)
 cd frontend
 npm install
 npm run dev
+```
+### Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
