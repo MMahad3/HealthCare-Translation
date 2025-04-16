@@ -1,12 +1,50 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🩺 Healthcare Voice Translator
 
-Currently, two official plugins are available:
+A real-time multilingual voice translator web app designed for healthcare settings. This tool allows medical professionals and patients to break language barriers by speaking into the app, which then translates the input and speaks it back in the selected language.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Preview
 
-## Expanding the ESLint configuration
+_Coming Soon_ (You can add deployment link here when ready)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📋 Features
+
+- 🎙️ **Speech Recognition**: Capture voice input using the browser's native capabilities.
+- 🌍 **Language Translation**: Automatically translates spoken input to a target language.
+- 🔊 **Text-to-Speech Playback**: Speaks the translated text using realistic AI-generated voice.
+- 💻 **Simple Frontend UI**: Clean and intuitive React interface with Tailwind CSS.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- Web Speech API (SpeechRecognition)
+
+### Backend
+- FastAPI
+- Google Translate (via `googletrans`)
+- gTTS (Google Text-to-Speech)
+- Whisper (OpenAI) *(optional if using `/transcribe`)*
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+)
+- Python (v3.8+)
+- pip
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
